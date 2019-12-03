@@ -1,0 +1,102 @@
+*{margin: 0; padding: 0;}
+*{text-decoration: none;}
+
+.clearfix {overflow: auto}
+
+.wrap {
+    width: 100%;
+    margin: 0 auto; 
+    
+}
+
+.topbar {
+    height: 60px;
+    width: 100%;
+    background: #4CAF50;
+}
+
+.topbarlinks {
+    float: left;
+}
+
+.sitesearch{
+    float: right;
+}
+ 
+.topbarlinks ul {
+  margin: 15px;
+  list-style: none;  
+}
+
+.topbarlinks ul li {
+    padding:  0 10px;
+    display: inline-block;
+    border-right: 1px solid #bbb;
+	font-size:20px;
+	font-family:calibri;
+}
+
+.topbarlinks ul li:last-child{
+    border: 0ch;
+	float:right;
+	margin-left:1000px;
+}
+
+.topbarlinks ul li a {
+    color:  #333;
+}
+
+.topbarlinks ul li a:hover{
+    color:white;
+}
+
+header .logo a{
+	float:left;
+	margin-left:40px;
+}
+header .logo h1{
+	float:right;
+	font-size:80px;
+	font-weight:bold;
+	margin-right:40px;
+	margin-top:40px;
+	font-family:calibri;
+	color:#000;
+}
+header .logo h2{
+	float:right;
+	font-size:60px;
+	font-weight:bold;
+	margin-right:40px;
+	font-family:calibri;
+	color:#000;
+}
+
+header .logo h3{
+	font-family:calibri;
+	float:right;
+	color:gray;
+}
+
+div.homecontent{
+    widows: 1000px;
+    background: #98E7BF;
+}
+div.content{
+    width:30%;
+    height: 600px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 15px;
+	margin-right:15px;
+    border-right: 3px solid #4CAF50;
+}
+
+div.content h2{
+    margin: 20px 0 40px 130px;
+    font-size: 30px;
+    font-weight: normal;
+}
+div.content img{
+    margin-left: 130px ;
+}
