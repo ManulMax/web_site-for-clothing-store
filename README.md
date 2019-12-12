@@ -1,3 +1,4 @@
 # web_site-for-clothing-store
 
-still building
+still building. 
+not completed project
