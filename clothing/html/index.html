@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Fashionova-Dashboard</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../css/style.css" >
+		<link rel="stylesheet" type="text/css" href="../css/user.css" >
+		<style>
+			body {
+			  background-image: url('../img/index.jpg');
+			  background-repeat: no-repeat;
+			}
+		</style>
+	</head>
+	
+	<body>
+
+		<!-- Navigation Bar Start -->
+		<nav class="nav">
+			<div class="dropdown" >
+			<button class="dropbtn" onclick="openSideBar()"><i class="fas fa-bars" ></i></button>
+				<div id="myDropdown" class="dropdown-content" >
+
+				  <a href="#">xxxxx</a>
+				  <a href="#">xxxxx</a>
+				  <a href="#">xxxxx</a>
+				  <a href="#">xxxxx</a>
+				  <a href="#">xxxxx</a>
+				  <a href="#">xxxxx</a>
+				  <a href="#">xxxxx</a>
+				</div>
+			</div>
+
+		  
+		<script>
+
+		function openSideBar() {
+		  document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+
+		window.onclick = function(e) {
+		  if (!e.target.matches('.dropbtn')) {
+		  var myDropdown = document.getElementById("myDropdown");
+			if (myDropdown.classList.contains('show')) {
+			  myDropdown.classList.remove('show');
+			}
+		  }
+		}
+		</script>
+		
+
+			<span>
+				<a href="#"><i class="fas fa-home" title="Home">&nbsp;Home</i></a>
+				<a href="#"><i class="fas fa-info-circle" title="About Us">&nbsp;About Us</i></a>
+				<a href="#"><i class="fas fa-phone" title="Contact Us">&nbsp;Contact Us</i></a>	
+				
+			</span>
+		</nav>
+		<!-- Navigation Bar End-->
+		
+	<div class="footer">
+		  <p>&copy; 2020,Fashionova. All rights reserved.</p>
+		</div>
+		
+		
+	</body>
+	
+</html>
+
+
