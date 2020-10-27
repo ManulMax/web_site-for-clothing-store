@@ -33,8 +33,8 @@
         }
         
         .topnav a.active {
-          background-color: #2196F3;
-          color: white;
+          background-color: #483A58;
+          color: #56638A;
         }
         
         .topnav input[type=text] {
@@ -45,7 +45,27 @@
           border: none;
           font-size: 17px;
         }
-        
+        .wrapper .img{
+          margin-left: 50px;
+          margin-right: 50px;
+          margin-top: 20px;
+          display: block;
+        }
+        .wrapper .title h1{
+          color: #56203D;
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+          font-size: 50px;
+          letter-spacing: 5px;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .wrapper .title p{
+          color: darkgrey;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+        }
         @media screen and (max-width: 600px) {
           .topnav a, .topnav input[type=text] {
             float: none;
@@ -55,19 +75,115 @@
             margin: 0;
             padding: 14px;
           }
-          
+          .img .img1{
+            width: 300px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .img .img2{
+            display: none;
+          }
           .topnav input[type=text] {
             border: 1px solid #ccc;  
           }
         }
-        </style>
+
+        /* ___________________________________________________ */
+        .row3{color:#474747; background-color:#FFFFFF;}
+        .hoc{display:block; margin:0 auto;}
+        .clear, .group{display:block;}
+        .clear::before, .clear::after, .group::before, .group::after{display:table; content:"";}
+        .clear, .clear::after, .group, .group::after{clear:both;}
+        .container{padding:80px 0;}
+        #introblocks{margin-bottom:80px;}
+        #introblocks > ul > li{padding:20px;}
+        #introblocks article{display:block; position:relative; padding:0 0 0 60px; line-height:normal;}
+        #introblocks article *{margin:0; padding:0;}
+        #introblocks article i{display:inline-block; position:absolute; top:0; left:0; width:60px; overflow:hidden; line-height:1; font-size:32px;}
+        #introblocks article .heading{margin-bottom:10px;}
+</style>
 </head>
 <body>
+  <div class="wrapper">
     <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <input type="text" placeholder="Search..">
-      </div>
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <input type="text" placeholder="Search..">
+    </div>
+    <div class="img">
+    <img src="../img/front.jpg" alt="" class="img1">
+    <img src="../img/front.jpg" alt="" class="img2">
+    </div>
+    <br>
+    <hr width="75%">
+    <div class="title">
+      <h1>WELCOME TO HAPPY CLOATHING</h1>
+      <p>for a better online shopping experience</p>
+    </div>
+    <div class="wrapper row3">
+       <section>
+          <div class="sectiontitle">
+            <h6 class="heading">Teachers Crew</h6>
+            <p>Has The Best Qualified Teaching Crew In Galle District</p>
+          </div>
+          <ul class="nospace group overview">
+            <li class="one_third">
+              <figure><a href="#"><img src="../img/320x240.png" alt=""></a>
+                <figcaption>
+                  <h6 class="heading">Amet tincidunt</h6>
+                  <p>Etiam pulvinar mollis dui vitae porta orci fringilla.</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="one_third">
+              <figure><a href="#"><img src="../img/320x240.png" alt=""></a>
+                <figcaption>
+                  <h6 class="heading">Tempus nulla non</h6>
+                  <p>Fermentum enim curabitur posuere sit amet quam sed.</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="one_third">
+              <figure><a href="#"><img src="../img/320x240.png" alt=""></a>
+                <figcaption>
+                  <h6 class="heading">Tristique cras</h6>
+                  <p>Purus arcu condimentum non euismod non feugiat nec.</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="one_third">
+              <figure><a href="#"><img src="../img/320x240.png" alt=""></a>
+                <figcaption>
+                  <h6 class="heading">Leo vestibulum</h6>
+                  <p>Mi fringilla non tellus eu ornare lobortis mauris.</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="one_third">
+              <figure><a href="#"><img src="../img/320x240.png" alt=""></a>
+                <figcaption>
+                  <h6 class="heading">Quisque auctor</h6>
+                  <p>Neque nibh in porta lacus iaculis nec duis convallis.</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="one_third">
+              <figure><a href="#"><img src="images/demo/320x240.png" alt=""></a>
+                <figcaption>
+                  <h6 class="heading">Sapien imperdiet</h6>
+                  <p>Lacinia ligula mauris pretium diam nec hendrerit.</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+        <!-- ################################################################################################ -->
+        <!-- / main body -->
+        <div class="clear"></div>
+      </main>
+    </div>
+  </div>
 </body>
 </html>
