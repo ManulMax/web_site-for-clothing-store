@@ -46,8 +46,8 @@
           font-size: 17px;
         }
         .wrapper .img{
-          margin-left: 50px;
-          margin-right: 50px;
+          margin-left: 30px;
+          margin-right: 30px;
           margin-top: 20px;
           display: block;
         }
@@ -102,6 +102,140 @@
         #introblocks article *{margin:0; padding:0;}
         #introblocks article i{display:inline-block; position:absolute; top:0; left:0; width:60px; overflow:hidden; line-height:1; font-size:32px;}
         #introblocks article .heading{margin-bottom:10px;}
+        .sectiontitle{display:block; max-width:55%; margin:0 auto 80px; text-align:center;}
+        .sectiontitle *{margin:0;}
+        .nospace{margin:0; padding:0; list-style:none;}
+        h1, h2, h3, h4, h5, h6, .heading{margin:0 0 20px 0; font-size:22px; line-height:normal; font-weight:normal; text-transform:capitalize; font-variant:small-caps;}
+.heading.nospace{margin-bottom:0;}
+.clear::before, .clear::after, .group::before, .group::after{display:table; content:"";}
+.clear, .clear::after, .group, .group::after{clear:both;}
+.overview > li{margin-bottom:30px;}
+.overview > li:nth-last-child(-n+3){margin-bottom:0;}/* Removes bottom margin from the last three items - margin is restored in the media queries when items stack */
+.overview > li:nth-child(3n+1){margin-left:0; clear:left;}/* Removes the need to add class="first" */
+.overview > li figure{position:relative; max-width:320px;}
+.overview > li figure a::after{position:absolute; top:0; right:0; bottom:0; left:0; content:"";}
+.overview > li figure figcaption{display:block; position:absolute; bottom:0; width:100%; padding:15px;}
+.overview > li figure a::after, .overview > li figure figcaption{opacity:0;}
+.overview > li figure:hover a::after, .overview > li figure:hover figcaption{opacity:1;}
+.overview > li figure figcaption *{margin:0;}
+.overview > li figure .heading{margin-bottom:10px; font-size:1.2rem;}
+.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:inline-block; float:left; margin:0 0 0 3.06748466257669%; list-style:none;}
+/* _____________________________________________________________________________________________ */
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, Sans-serif;
+  background-color: #070617;
+}
+.dummy_page {
+  height: 200px;
+  width: 100%;
+  background-color: #f0f0f0;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 60px 0px;
+}
+/* STYLES SPECIFIC TO FOOTER  */
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #070617;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255,255,255,0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -170,7 +304,7 @@
               </figure>
             </li>
             <li class="one_third">
-              <figure><a href="#"><img src="images/demo/320x240.png" alt=""></a>
+              <figure><a href="#"><img src="../img/320x240.png" alt=""></a>
                 <figcaption>
                   <h6 class="heading">Sapien imperdiet</h6>
                   <p>Lacinia ligula mauris pretium diam nec hendrerit.</p>
@@ -183,6 +317,77 @@
         <!-- / main body -->
         <div class="clear"></div>
       </main>
+    </div>
+    <hr width="75%">
+    <div class="sectiontitle">
+      <h6 class="heading">bbbbbbbbbbbbbbbbb</h6>
+      <p>aaaaaaaaaaaaaaaaaaaaaaa</p>
+    </div>
+    <div class="dummy_page">
+      Mobile responsive footer
+    </div>
+    <!-- FOOTER START -->
+    <div class="footer">
+      <div class="contain">
+      <div class="col">
+        <h1>Company</h1>
+        <ul>
+          <li>About</li>
+          <li>Mission</li>
+          <li>Services</li>
+          <li>Social</li>
+          <li>Get in touch</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h1>Products</h1>
+        <ul>
+          <li>About</li>
+          <li>Mission</li>
+          <li>Services</li>
+          <li>Social</li>
+          <li>Get in touch</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h1>Accounts</h1>
+        <ul>
+          <li>About</li>
+          <li>Mission</li>
+          <li>Services</li>
+          <li>Social</li>
+          <li>Get in touch</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h1>Resources</h1>
+        <ul>
+          <li>Webmail</li>
+          <li>Redeem code</li>
+          <li>WHOIS lookup</li>
+          <li>Site map</li>
+          <li>Web templates</li>
+          <li>Email templates</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h1>Support</h1>
+        <ul>
+          <li>Contact us</li>
+          <li>Web chat</li>
+          <li>Open ticket</li>
+        </ul>
+      </div>
+      <div class="col social">
+        <h1>Social</h1>
+        <ul>
+          <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
+          <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
+          <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
+        </ul>
+      </div>
+    <div class="clearfix"></div>
+    </div>
     </div>
   </div>
 </body>
